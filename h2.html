@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines</title>
+    <link href="https://fonts.cdnfonts.com/css/glathen-girl" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/glathen-girl?styles=142744'); 
+
+
+        /* letras e cores */
+
+        h1 {
+            font-size: 100pt; 
+        }
+
+        nav ul {
+            font-size:  25pt;
+            list-style: none;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        s1 {
+            font-size:  10pt;
+            color: #fb7dbc;
+        }
+
+        body {
+            background-color: #FFC2E1; 
+            font-size:  15pt;
+            color: #FFFFC2; /* Set the text color of the header */
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .button1 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  #f49dc8; /* Green background color for the button */
+            color: #FFFFC2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        .button1:hover {
+            background-color: #fcfca9; 
+        }
+
+        .button2 {
+            display: none;
+            padding: 10px 20px;
+            background-color:  #FFFFC2; /* Green background color for the button */
+            color: #FFC2E1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        .button2:hover {
+            background-color: #f8abd1; 
+        }
+
+        #passwordInput {
+            margin-bottom: 10px;
+        }
+
+        #passwordMessage {
+            margin-top: 10px; /* Add margin to separate password message from other elements */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Hint nº2 </h1>
+    </header>
+
+    <main>
+        <p> Omg first one down!!! Apsa would be proud :,). Now let's  go back to when we first started to hang out. Numa das infames 3 tentativas de meter conversa comigo, perguntaste qual era o nome da música que eu tinha colocado no teu carro depois de uma tarde no Rasta a ver um jogo de Portugal. Tão queimado-nacionalista-core de nós.
+        </p>
+        <input type="password" id="passwordInput" oninput="checkPassword()">
+        <p id="passwordMessage"></p>
+       
+
+    </main>
+
+   
+
+    <script>
+        function checkPassword() {
+           
+
+            var passwordInput = document.getElementById("passwordInput").value;
+            var buttonLink = document.getElementById("buttonLink");
+            var passwordMessage = document.getElementById("passwordMessage");
+
+            if (passwordInput === "i don't wanna be me") {
+                buttonLink.style.display = "inline-block";
+                passwordMessage.innerHTML = "Correct password!";
+            } else {
+                buttonLink.style.display = "none";
+                passwordMessage.innerHTML = "Incorrect password. Please try again.";
+            }
+        }
+    </script>
+     <footer>
+        <nav>
+            <ul>
+                <li><a href="mehgpt.html" id="returnButton" class="button1"> início</a></li>
+
+                <li><a href="h3.html" id="buttonLink" class="button2">Next one</a></li>
+            
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
